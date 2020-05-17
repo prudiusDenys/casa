@@ -1,0 +1,356 @@
+@import 'global';
+@import 'vars';
+@import 'fonts';
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body.mouse {
+
+  .prodotti__link:hover,
+  .language__link:hover {
+    .sub-menu__list {
+      display: block;
+    }
+  }
+}
+body.touch{
+  .sub-menu__list.open{
+    display: block;
+  }
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#fff, 0.9);
+    z-index: 2;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 2;
+    width: 200px;
+
+    &-img {
+      width: 100%;
+    }
+  }
+
+  &__burger {
+    display: none;
+  }
+
+
+  &__menu {
+    position: relative;
+    z-index: 2;
+
+    li {
+      position: relative;
+    }
+    a.parent {
+      margin: 0 15px 0 0 ;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    li+li {
+      margin-left: 40px;
+    }
+  }
+
+  .arrow {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: -7px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #000;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    cursor: pointer;
+  }
+  .arrow.active{
+    transform: rotate(-180deg);
+  }
+
+  &__link {
+    font-size: 22px;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+
+    &:hover,
+    &:focus {
+      position: relative;
+      color: #fff;
+      background-color: #6D8D4F;
+      transition: all 0.5s;
+    }
+  }
+
+  .sub-menu__list {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    text-align: center;
+    padding: 40px 0px;
+
+
+    li {
+      background-color: rgba(#fff, 0.9);
+      margin: 0;
+      line-height: 24px;
+      padding: 0 10px 10px;
+    }
+  }
+}
+
+.sub-menu__link {
+  padding: 10px;
+  border-radius: 10px;
+
+  &:hover,
+  &:focus {
+    position: relative;
+    color: #fff;
+    background-color: #6D8D4F;
+    transition: all 0.5s;
+  }
+}
+body.touch .arrow{
+  display: block;
+}
+
+// ============ END HEADER ==============
+// ============ START SLIDER ============
+
+.slider {
+  margin-bottom: 100px;
+
+  &__slide {
+    height: 100vh;
+
+    &-img {
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .slick-list {
+    height: 100vh;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+    font-family: 'icomoon';
+    font-size: 68px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      color: #D63E8C;
+      transition: all 0.5s;
+    }
+  }
+
+  .slick-next {
+    right: 20px;
+
+  }
+
+  .slick-prev {
+    left: 40px;
+    z-index: 1;
+  }
+}
+
+// ============ END SLIDER ============
+// ============ START HOME ============
+
+.home {
+  margin-bottom: 100px;
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #D63E8C;
+    font-family: "DKLemonYellowSun";
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 34px;
+    line-height: 34px;
+    line-height: 50px;
+    padding: 60px 0 200px 0;
+  }
+}
+
+// ============ END HOME ============
+// ============ START CASA ============
+
+.tittle {
+  color: #D63E8C;
+  font-family: "DKLemonYellowSun";
+  font-size: 45px;
+}
+
+.casa {
+  margin-bottom: 100px;
+
+  &__content {
+    text-align: center;
+  }
+
+  &__tittle {
+    margin-bottom: 30px;
+  }
+
+  &__teg {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .casa__slides {
+    width: 100%;
+
+    img {
+      width: 100%;
+      max-height: 450px;
+      object-fit: contain;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 40%;
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+    font-family: 'icomoon';
+    font-size: 68px;
+    cursor: pointer;
+  }
+
+  .slick-next {
+    right: -40px;
+
+  }
+
+  .slick-prev {
+    left: -40px;
+    z-index: 1;
+  }
+}
+
+// ============ END BORSE ============
+// ============ Start Eventi ============
+
+.eventi__img {
+  margin: 0 auto;
+  max-width: 500px;
+  height: 250px;
+
+  img {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+// ============ START FOOTER ============
+
+.footer {
+  background-color: #6D8D4F;
+
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 0;
+  }
+
+  &__contact {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  &__mail {
+    a {
+      color: #fff;
+
+      &:hover {
+        color: #D63E8C;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  &__social-link {
+    font-size: 30px;
+    color: #fff;
+
+    &+& {
+      margin-left: 15px;
+    }
+
+    &:hover {
+      color: #D63E8C;
+      transition: all 0.5s;
+    }
+  }
+}
+
+@import 'media';
