@@ -4,201 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Document</title>
+  <title>Welcome</title>
 </head>
 
 <body>
-
-  <div class="page">
-
-    <!-- Header -->
-
-    <header class="header">
-      <div class="container">
-        <div class="header__content">
-          <div class="header__logo">
-            <a href="#header"><img class="header__logo-img" src="images/madita-logo.png" alt=""></a>
-          </div>
-          <div class="header__burger">
-            <span class="header__burger-span"></span>
-          </div>
-          <nav class="header__menu">
-            <ul class="header__list">
-              <li class="header__item"><a href="#header" class="header__link">Home</a></li>
-              <li class="header__item prodotti__link">
-                <a href="#casa" class="header__link">Prodotti</a>
-                <span class="menu__arrow arrow"></span>
-                <ul class="sub-menu__list">
-                  <li><a href="#casa" class="sub-menu__link">Casa</a></li>
-                  <li><a href="#borse" class="sub-menu__link">Borse</a></li>
-                  <li><a href="#accessori" class="sub-menu__link">Accessori</a></li>
-                </ul>
-              </li>
-              <li class="header__item"><a href="#eventi" class="header__link">Eventi</a></li>
-              <li class="header__item language__link">
-                <a href="#" class="header__link">Lingua</a>
-                <span class="menu__arrow arrow"></span>
-                <ul class="sub-menu__list">
-                  <li><a href="#" class="sub-menu__link">Italiano</a></li>
-                  <li><a href="#" class="sub-menu__link">Tedesco</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div>
+  <div class="welcome">
+    <div class="welcome__content">
+      <div class="logo">
+        <img src="images/madita-logo.png" alt="">
       </div>
-    </header>
-
-    <!-- ============ SLIDER ========= -->
-
-    <section id="header" class="slider">
-      <div class="slider__content">
-        <div class="slider__slide">
-          <div class="slider__slide-img" style="background-image: url(images/0.0.jpg);"></div>
-        </div>
-        <div class="slider__slide">
-          <div class="slider__slide-img" style="background-image: url(images/1.1.jpg);"></div>
-        </div>
-        <div class="slider__slide">
-          <div class="slider__slide-img" style="background-image: url(images/2.1.jpg);"></div>
-        </div>
+      <div class="welcome__item">
+        <a href="home.html" class="welcome__link">enter</a>
       </div>
-    </section>
-
-    <!-- end slider -->
-    <!-- start home -->
-
-    <section class="home">
-      <div class="container">
-        <div class="home__content">
-          <div class="home__title">
-            "IL SUCCESSO SI PUÒ RAGGIUNGERE IN TANTI MODI, LA FELICITÀ LA RAGGIUNGI SOLO CON LA TUA PASSIONE"
-          </div>
-          <div class="home__text" style="background-image: url(images/0.3.png);">
-            Madita é una coopertiva che è stata fondata nel 2015 dalle due sorelle Katja e Petra Gruber con l`obiettivo
-            di implementare il bussines feminile e di produrre e commercializzare prodotti fatti a mano.. La materia
-            prima è legno, tessuti, e prodotti naturali in genere tutti fatti a mano.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end home -->
-    <!-- start casa -->
-
-    <section id="casa" class="casa">
-      <div class="container">
-        <div class="casa__content">
-          <div class="casa__tittle tittle">CASA</div>
-          <div class="casa__teg">#feel like home</div>
-          <div class="casa__text">Oggetti per la casa fatti a mano, contenitori creati con stoﬀa per la frutta o il
-            pane. Ogni oggetto é unico e sei tu a scegliere i colori.</div>
-          <div class="casa__slider">
-            <div class="casa__slider-content">
-              <div class="casa__slides"><img src="images/1.1.jpg" alt=""></div>
-              <div class="casa__slides"><img src="images/1.2.png" alt=""></div>
-              <div class="casa__slides"><img src="images/1.3.png" alt=""></div>
-              <div class="casa__slides"><img src="images/1.4.png" alt=""></div>
-              <div class="casa__slides"><img src="images/1.5.png" alt=""></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end casa -->
-    <!-- start ACCESSORI -->
-
-    <section id="accessori" class="casa">
-      <div class="container">
-        <div class="casa__content">
-          <div class="casa__tittle tittle">ACCESSORI</div>
-          <div class="casa__teg">#make beauty beautyfull</div>
-          <div class="casa__text">Accessori, gioielli, orecchini fatte a mano artigianali con la carta o stoﬀa. Nuovo:
-            Mascherine in diversi colori, per più informazioni contatteci.</div>
-          <div class="casa__slider">
-            <div class="casa__slider-content">
-              <div class="casa__slides"><img src="images/2.1.jpg" alt=""></div>
-              <div class="casa__slides"><img src="images/2.2.png" alt=""></div>
-              <div class="casa__slides"><img src="images/2.3.png" alt=""></div>
-              <div class="casa__slides"><img src="images/2.4.png" alt=""></div>
-              <div class="casa__slides"><img src="images/2.5.png" alt=""></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end ACCESSORI -->
-    <!-- start borse -->
-
-    <section id="borse" class="casa">
-      <div class="container">
-        <div class="casa__content">
-          <div class="casa__tittle tittle">BORSE</div>
-          <div class="casa__teg">#bag goal</div>
-          <div class="casa__text">La borsa non è solo un oggetto ma è una casa personale che si porta sempre dietro
-          </div>
-          <div class="casa__slider">
-            <div class="casa__slider-content">
-              <div class="casa__slides"><img src="images/3.1.jpg" alt=""></div>
-              <div class="casa__slides"><img src="images/3.2.png" alt=""></div>
-              <div class="casa__slides"><img src="images/3.3.png" alt=""></div>
-              <div class="casa__slides"><img src="images/3.4.png" alt=""></div>
-              <div class="casa__slides"><img src="images/3.5.png" alt=""></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end borse -->
-    <!-- start eventi -->
-
-    <section id="eventi" class="casa">
-      <div class="container">
-        <div class="casa__content">
-          <div class="casa__tittle tittle">EVENTI</div>
-          <div class="eventi__img"><img src="images/eventi2.jpg" alt=""></div>
-          <div class="casa__teg">#white night bolzano</div>
-          <div class="casa__text">Mode-show a bolzano, con la nostra collezione Madita 2020. 15.agosto 2020 - 20:00 -
-            Piazza Walther BZ
-          </div>
-          <div class="eventi__img"><img src="images/eventi2.jpg" alt=""></div>
-          <div class="casa__teg">#aperitivo lungo museion</div>
-          <div class="casa__text">La pace nel mondo ha sicuramente in mano un aperitivo. 5.settembre 2020 -
-            18.00 - Museion BZ
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end eventi -->
-    <!-- Footer -->
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__contact">
-            <div class="footer__title">
-              CONTATTO
-            </div>
-            <div class="footer__mail">
-              <a href="mailto:madita-shop@gmail.com">madita-shop@gmail.com</a>
-            </div>
-          </div>
-          <div class="footer__social">
-            <a class="footer__social-link icon-instagram" href="#"></a>
-            <a class="footer__social-link icon-facebook-square" href="#"></a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
+    </div>
   </div>
+  <div class="intro-slider">
+    <div class="intro-slider__content">
+      <div class="slider__slide">
+        <div class="slider__slide-img" style="background-image: url(images/0.0.jpg);"></div>
+      </div>
+      <div class="slider__slide">
+        <div class="slider__slide-img" style="background-image: url(images/1.1.jpg);"></div>
+      </div>
+      <div class="slider__slide">
+        <div class="slider__slide-img" style="background-image: url(images/2.1.jpg);"></div>
+      </div>
+    </div>
+  </div>
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>

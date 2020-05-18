@@ -10,7 +10,7 @@ $(function () {
   $('.slider__content').slick({
     arrows: true,
     dots: false,
-    autoplay:true,
+    autoplay: true,
     pauseOnFocus: false,
     pauseOnHover: false,
     speed: 800,
@@ -22,6 +22,19 @@ $(function () {
     arrows: true,
     dots: false,
     speed: 800,
+    prevArrow: '<button type="button" class="slick-prev icon-angle-left"></button>',
+    nextArrow: '<button type="button" class="slick-next icon-angle-right"></button>',
+  });
+  //intro-slider
+  $('.intro-slider__content').slick({
+    arrows: false,
+    dots: false,
+    autoplay: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    autoplaySpeed: 2000,
+    speed: 800,
+    fade: true,
     prevArrow: '<button type="button" class="slick-prev icon-angle-left"></button>',
     nextArrow: '<button type="button" class="slick-next icon-angle-right"></button>',
   });
