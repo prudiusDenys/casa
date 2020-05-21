@@ -19,7 +19,7 @@
     align-items: center;
   }
 
-  .logo {
+  .welcome__logo {
     position: relative;
     z-index: 1;
     width: 200px;
@@ -60,8 +60,6 @@
 
 // end welcome-page
 
-
-
 body.mouse {
 
   .prodotti__link:hover,
@@ -78,7 +76,7 @@ body.touch {
   }
 }
 
-// start header
+// ========== START HEADER  ==========
 .header {
   position: fixed;
   width: 100%;
@@ -207,8 +205,8 @@ body.touch .arrow {
   display: block;
 }
 
-// ============ END HEADER ==============
-// ============ START SLIDER ============
+// ========== END HEADER  ==========
+// ========== START SLIDER =========
 
 .slider {
   margin-bottom: 100px;
@@ -291,6 +289,19 @@ body.touch .arrow {
 }
 
 // ============ END HOME ============
+// =============  START VIDEO =======
+
+.video {
+  &__content {
+    width: 100%;
+  }
+
+  &__player {
+    width: 100%;
+  }
+}
+
+// =============  END VIDEO ===========
 // ============ START CASA ============
 
 .tittle,
